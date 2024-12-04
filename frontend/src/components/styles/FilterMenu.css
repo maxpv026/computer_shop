@@ -1,0 +1,56 @@
+.filter-menu {
+    width: 250px;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .manufacturer-list {
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .manufacturer-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .manufacturer-item label {
+    margin-left: 5px;
+  }
+  
+  .price-filter {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .price-filter input {
+    width: calc(50% - 5px);
+    padding: 5px;
+  }
+  
+  .apply-filters-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .apply-filters-button:hover {
+    background-color: #0056b3;
+  }
+  
+  

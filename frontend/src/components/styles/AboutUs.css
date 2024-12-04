@@ -1,0 +1,84 @@
+/* Загальний стиль для About Us */
+.about-us {
+  background-color: #121212;
+  color: #f5f5f5;
+  padding: 40px 20px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  font-size: 36px;
+  color: #ff6a00;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: slideInFromTop 1s ease-in-out;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px auto;
+  line-height: 1.6;
+  max-width: 800px;
+  color: #c7c7c7;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Анімації */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Кнопка */
+.contact-button {
+  margin-top: 20px;
+  background-color: #ff6a00;
+  color: #121212;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #ff9f4d;
+  transform: translateY(-3px);
+  box-shadow: 0px 4px 8px rgba(255, 106, 0, 0.4);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+  
