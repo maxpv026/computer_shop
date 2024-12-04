@@ -23,8 +23,8 @@ app.post("/api/send-email", async (req, res) => {
     host: "smtp.ethereal.email", // SMTP-сервер Ethereal
     port: 587,                   // Порт для з'єднання
     auth: {
-      user: "landen46@ethereal.email", // Ваш Ethereal username
-      pass: "bMKzm8rjvf9FSYPWz5",     // Ваш Ethereal password
+      user: "your.email", // Ваш Ethereal username
+      pass: "your password",     // Ваш Ethereal password
     },
   });
 
@@ -32,7 +32,7 @@ app.post("/api/send-email", async (req, res) => {
     // Відправка email
     const info = await transporter.sendMail({
       from: '"Магазин" <noreply@shop.com>', // Від кого
-      to: "maxym94000@gmail.com",           // Куди надсилати лист
+      to: "mail",           // Куди надсилати лист
       subject,                             // Тема листа
       html: body,                          // Тіло листа у форматі HTML
     });
